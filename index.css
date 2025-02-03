@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 80vh;
+  border-radius: 2em;
+  padding: 10px;
+  background-color: #191919;
+  box-shadow: 5px 5px 30px rgb(4, 4, 4), -5px -5px 30px rgb(57, 57, 57);
+}
+
+.profile-image {
+  background-color: transparent;
+  border: none;
+  margin-top: 20px;
+  border-radius: 100%;
+  width: 100px;
+  height: auto;
+}
+
+.pfp {
+  border-radius: 35em;
+  fill: white;
+  width: 100%; /* Added to make SVG fill the container */
+  height: auto; /* Added to maintain aspect ratio */
+}
+
+.description {
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.fullname {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.job-title {
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.bio {
+  text-align: justify;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: lighter;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+.social-links {
+  background-color: #191919;
+  border-radius: 3em;
+  width: 90%;
+  padding: 14px;
+  margin-top: 15px;
+  color: white;
+  box-shadow: 3px 3px 15px rgb(0, 0, 0), -3px -3px 15px rgb(58, 58, 58);
+}
+
+.card a {
+  transition: 0.4s;
+  color: white;
+}
+
+.contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.email-address {
+  font-weight: lighter;
+}
+
+#github:hover {
+  color: #c9510c;
+}
+
+#linkedin:hover {
+  color: #3b5998;
+}
+
+#twitter:hover {
+  color: #00acee;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+  }
+  .bio {
+    font-size: 0.8rem;
+  }
+}

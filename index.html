@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./profile.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tony B. NYA - Profile Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <center>
+          <div class="profile-image">
+            <img
+              class="pfp"
+              src="./profile.png"
+              alt="my profile picture"
+              data-testid="profilePicture"
+            />
+          </div>
+          <div class="description">
+            <h2 data-testid="fullName" class="fullname">Tony B. NYA</h2>
+            <h4 data-testid="jobTitle" class="job-title">Software Engineer</h4>
+            <h6 data-testid="currentLocation">Douala, Cameroon</h6>
+            <h6 data-testid="currentTimeUTC" id="utc-time"></h6>
+            <p data-testid="shortBio" class="bio">
+              I'm a Software Engineer with expertise in AI, Web Development, and
+              Software Development, holding certifications from ALX, Sayna
+              Academy, and GitHub's All In Open Source program. With a
+              Bachelor's in Computer Science and nearly a decade of experience
+              in Diplomacy and Public Administration, I blend technical
+              expertise with strong project management and problem-solving
+              skills.
+            </p>
+          </div>
+          <div data-testid="socialLinks" class="social-links">
+            <a id="github" href="https://github.com/tonybnya" target="_blank"
+              ><svg
+                viewBox="0 0 16 16"
+                class="bi bi-github"
+                fill="currentColor"
+                height="16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                ></path></svg
+            ></a>
+            &nbsp; &nbsp; &nbsp;
+            <a
+              id="linkedin"
+              href="https://linkedin.com/in/tonybnya"
+              target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="currentColor"
+                height="16"
+                width="16"
+              >
+                <path
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                /></svg
+            ></a>
+            &nbsp; &nbsp; &nbsp;
+            <a id="twitter" href="https://x.com/tonybnya" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                height="16"
+                width="16"
+              >
+                <path
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                /></svg
+            ></a>
+          </div>
+        </center>
+        <p class="contact">
+          <span>Send email:</span>
+          <span
+            ><i class="fa-solid fa-envelope"></i>
+            <a
+              data-testid="emailAddress"
+              class="email-address"
+              href="mailto:tonybnya@gmail.com"
+              >tonybnya@gmail.com</a
+            ></span
+          >
+        </p>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
